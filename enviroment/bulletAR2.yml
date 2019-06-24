@@ -1,0 +1,42 @@
+name: bulletAR2
+channels:
+  - pytorch
+  - anaconda
+  - defaults
+dependencies:
+  - astroid=2.2.5=py37_0
+  - blas=1.0=mkl
+  - ca-certificates=2019.5.15=0
+  - certifi=2019.6.16=py37_0
+  - cffi=1.12.3=py37h7a1dbc1_0
+  - colorama=0.4.1=py37_0
+  - cudatoolkit=10.0.130=0
+  - icc_rt=2019.0.0=h0cc432a_1
+  - intel-openmp=2019.4=245
+  - isort=4.3.20=py37_0
+  - lazy-object-proxy=1.4.1=py37he774522_0
+  - mccabe=0.6.1=py37_1
+  - mkl=2019.4=245
+  - mkl_fft=1.0.12=py37h14836fe_0
+  - mkl_random=1.0.2=py37h343c172_0
+  - ninja=1.9.0=py37h74a9793_0
+  - numpy=1.16.4=py37h19fb1c0_0
+  - numpy-base=1.16.4=py37hc3f5095_0
+  - openssl=1.1.1c=he774522_1
+  - pip=19.1.1=py37_0
+  - pycparser=2.19=py37_0
+  - pylint=2.3.1=py37_0
+  - python=3.7.3=h8c8aaf0_1
+  - pytorch=1.1.0=py3.7_cuda100_cudnn7_1
+  - setuptools=41.0.1=py37_0
+  - six=1.12.0=py37_0
+  - sqlite=3.28.0=he774522_0
+  - vc=14.1=h21ff451_3
+  - vs2015_runtime=15.5.2=3
+  - wheel=0.33.4=py37_0
+  - wincertstore=0.2=py37_0
+  - wrapt=1.11.1=py37he774522_0
+  - pip:
+    - pybullet==2.5.1
+prefix: C:\Users\Ryan\.conda\envs\bulletAR2
+
