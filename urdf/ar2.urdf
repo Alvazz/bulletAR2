@@ -1,7 +1,7 @@
 <robot
-  name="ar2">
+  name="AR2">
   <link
-    name="base_link">
+    name="linkBase">
     <inertial>
       <origin
         xyz="-4.6941E-06 0.054174 0.038824"
@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/base_link.STL" />
+          filename="meshes/linkBase.STL" />
       </geometry>
       <material
         name="">
@@ -36,12 +36,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/base_link.STL" />
+          filename="meshes/linkBase.STL" />
       </geometry>
     </collision>
   </link>
   <link
-    name="link_1">
+    name="link0">
     <inertial>
       <origin
         xyz="-0.022706 0.04294 -0.12205"
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_1.STL" />
+          filename="meshes/link0.STL" />
       </geometry>
       <material
         name="">
@@ -76,25 +76,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_1.STL" />
+          filename="meshes/link0.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_1"
+    name="joint0"
     type="continuous">
     <origin
       xyz="0 0 0.003445"
       rpy="3.1416 -1.0248E-21 -1.6736E-05" />
     <parent
-      link="base_link" />
+      link="linkBase" />
     <child
-      link="link_1" />
+      link="link0" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="link_2">
+    name="link1">
     <inertial>
       <origin
         xyz="0.064818 -0.11189 -0.038671"
@@ -115,7 +115,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_2.STL" />
+          filename="meshes/link1.STL" />
       </geometry>
       <material
         name="">
@@ -129,25 +129,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_2.STL" />
+          filename="meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_2"
+    name="joint1"
     type="continuous">
     <origin
       xyz="0 0.064146 -0.16608"
       rpy="1.5708 0.5236 -1.5708" />
     <parent
-      link="link_1" />
+      link="link0" />
     <child
-      link="link_2" />
+      link="link1" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="link_3">
+    name="link2">
     <inertial>
       <origin
         xyz="-0.00029765 -0.023661 -0.0019125"
@@ -168,7 +168,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_3.STL" />
+          filename="meshes/link2.STL" />
       </geometry>
       <material
         name="">
@@ -182,25 +182,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_3.STL" />
+          filename="meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_3"
+    name="joint2"
     type="continuous">
     <origin
       xyz="0.1525 -0.26414 0"
       rpy="3.3431E-16 -1.4164E-16 -2.618" />
     <parent
-      link="link_2" />
+      link="link1" />
     <child
-      link="link_3" />
+      link="link2" />
     <axis
       xyz="0 0 -1" />
   </joint>
   <link
-    name="link_4">
+    name="link3">
     <inertial>
       <origin
         xyz="-0.0016798 -0.00057319 -0.074404"
@@ -221,7 +221,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_4.STL" />
+          filename="meshes/link3.STL" />
       </geometry>
       <material
         name="">
@@ -235,25 +235,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_4.STL" />
+          filename="meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_4"
+    name="joint3"
     type="continuous">
     <origin
       xyz="0 0 0.00675"
       rpy="1.5708 -1.2554 -1.5708" />
     <parent
-      link="link_3" />
+      link="link2" />
     <child
-      link="link_4" />
+      link="link3" />
     <axis
       xyz="0 0 -1" />
   </joint>
   <link
-    name="link_5">
+    name="link4">
     <inertial>
       <origin
         xyz="0.0015066 -1.3102E-05 -0.012585"
@@ -274,7 +274,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_5.STL" />
+          filename="meshes/link4.STL" />
       </geometry>
       <material
         name="">
@@ -288,25 +288,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_5.STL" />
+          filename="meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_5"
+    name="joint4"
     type="continuous">
     <origin
       xyz="0 0 -0.22225"
       rpy="3.1416 0 -2.8262" />
     <parent
-      link="link_4" />
+      link="link3" />
     <child
-      link="link_5" />
+      link="link4" />
     <axis
       xyz="-1 0 0" />
   </joint>
   <link
-    name="link_6">
+    name="link5">
     <inertial>
       <origin
         xyz="2.9287E-10 -1.6472E-09 0.0091432"
@@ -327,7 +327,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_6.STL" />
+          filename="meshes/link5.STL" />
       </geometry>
       <material
         name="">
@@ -341,20 +341,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ar2/meshes/link_6.STL" />
+          filename="meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_6"
+    name="joint6"
     type="continuous">
     <origin
       xyz="-0.000294 0 0.02117"
       rpy="0 0 3.1416" />
     <parent
-      link="link_5" />
+      link="link_4" />
     <child
-      link="link_6" />
+      link="link_5" />
     <axis
       xyz="0 0 -1" />
   </joint>
